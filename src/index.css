@@ -1,14 +1,17 @@
 
 :root {
-  --body-background: hsl(217, 27%, 25%);
-  --tab-background: hsl(217, 40%, 40%);
-  --tab-border: hsl(217, 80%, 10%);
-  --challenge-background: hsl(217, 80%, 90%);
+  --hue: 210;
+  --color-100: hsl(var(--hue), 40%, 15%);
+  --color-200: hsl(var(--hue), 40%, 25%);
+  --color-300: hsl(var(--hue), 40%, 40%);
+  --color-400: hsl(var(--hue), 40%, 45%);
+  --color-900: hsl(var(--hue), 40%, 90%);
+  --color-950: hsl(var(--hue), 40%, 95%);
 }
 
 body {
   margin: 0;
-  background-color: var(--body-background);
+  background-color: var(--color-200);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -21,6 +24,7 @@ code {
     monospace;
 }
 
-p, li, div, button, input {
+button, input {
   font-family: inherit;
 }
+

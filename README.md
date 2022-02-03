@@ -1,38 +1,47 @@
 # react-ts-challenge
 
-## project requirements:
 
-- react app with typescript
-- styled-components
+## overview
 
+This project creates a general framework for hosting "challenges" - simple tasks that prompt the user for some input, then does some processing and returns a result.
 
-## UI requirements:
+Challenges are defined in /services/challengeDefs.ts, which exports an array of IChallenge objects. 
 
-- header describing what each challenge does, e.g. "temperature converter"
-- input element
-- output area for result of each function
-- basic styling as appropriate
+Each challenge is shown as a tab; selecting a tab then displays the UI for performing that challenge.  Each challenge has a title, a description, instructions, an input field, and buttons to process or reset the form (well it's not actually a 'form')
+
+Each challenge has its own processing function which takes the user input, processes it, and returns a result, which is shown on the page.
 
 
 ## individual challenges:
 
 - Temperature converter: converts Celsius <=> Fahrenheit (both ways)
+
 - Palindrome checker: 
     - return boolean whether input is a palindrome.
     - must use recursion.
     - must not use .reverse() method.
+
 - Prime factorization using recursion.
     - return list of prime factors, I suppose.
 
 
-## implementation roadblocks
+## Tech notes
 
-had trouble with npx and c-r-a global version.
-fixed via
+required:
+- CRA (template = typescript)
+- styled-components
 
-npx clear-npx-cache
+I had trouble at first trying to create-react-app.  It complained that I had an old version globally installed, and/or that global installations were no longer supported.
 
-then i was able to
+So I did this:
 
-npx create-react-app react-ts-challenge --template typescript
+`npm uninstall -g create-react-app`
+
+but somehow that didn't solve my problem.  But doing this did:
+
+`npx clear-npx-cache`
+
+then I was able to
+
+`npx create-react-app react-ts-challenge --template typescript`
 
