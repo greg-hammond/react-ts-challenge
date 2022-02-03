@@ -1,5 +1,8 @@
 # react-ts-challenge
 
+Run it live at https://react-ts-challenge.netlify.app
+
+Developers: clone repo, npm install, npm run start
 
 ## overview
 
