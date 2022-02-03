@@ -1,5 +1,14 @@
+
+:root {
+  --body-background: hsl(217, 27%, 25%);
+  --tab-background: hsl(217, 40%, 40%);
+  --tab-border: hsl(217, 80%, 10%);
+  --challenge-background: hsl(217, 80%, 90%);
+}
+
 body {
   margin: 0;
+  background-color: var(--body-background);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +19,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p, li, div, button, input {
+  font-family: inherit;
 }
